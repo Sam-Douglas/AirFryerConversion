@@ -48,8 +48,8 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: build-artifact
-          path: dist
+          path: client/dist
       - id: publish
         uses: bitovi/github-actions-react-to-github-pages@v1.2.0
         with:
-          path: dist
+          path: client/dist
