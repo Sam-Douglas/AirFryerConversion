@@ -46,16 +46,11 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: client
+        working-directory: client/dist
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
       - name: Download Build Artifact
         uses: actions/download-artifact@v3
-        with:
-          name: build-artifact
-          path: dist
       - name: Deploy to Github Pages
         uses: bitovi/github-actions-react-to-github-pages@v1.2.0
-        with:
-          path: dist
