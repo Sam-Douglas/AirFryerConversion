@@ -48,13 +48,13 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          working-directory: client
+          path: client
       - name: Download Build Artifact
         uses: actions/download-artifact@v3
         with:
           name: build-artifact
-          working-directory: client/dist
+          path: client/dist
       - name: Deploy to Github Pages
         uses: bitovi/github-actions-react-to-github-pages@v1.2.0
         with:
-          working-directory: client/dist
+          path: client/dist
