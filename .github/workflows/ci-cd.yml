@@ -39,7 +39,7 @@ jobs:
       # - run: npm test
       - name: Deploy to Github Pages
         run: |
-          git config --global user.name Sam Douglas (Bot)
+          git config --global user.name Sams Bot
           git config --global user.email sdotherinbox@gmail.com
           git remote set-url origin https://${github_token}@github.com/${repository}
           npm run deploy
