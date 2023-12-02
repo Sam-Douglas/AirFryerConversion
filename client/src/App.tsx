@@ -1,9 +1,14 @@
+import "@mantine/core/styles.css"
+
+import { MantineProvider } from "@mantine/core"
+import HomePage from "./features/HomePage/HomePage"
+
 function App() {
 
   return (
-    <>
-      <h1>Air Fryer Conversion</h1>
-    </>
+    <MantineProvider>
+      <HomePage/>
+    </MantineProvider>
   )
 }
 
