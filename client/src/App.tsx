@@ -1,15 +1,14 @@
-import "@mantine/core/styles.css"
+import "@mantine/core/styles.css";
 
-import { MantineProvider } from "@mantine/core"
-import HomePage from "./features/HomePage/HomePage"
+import { MantineProvider } from "@mantine/core";
+import HomePage from "./features/HomePage/HomePage";
 
 function App() {
-
   return (
     <MantineProvider>
-      <HomePage/>
+      <HomePage />
     </MantineProvider>
-  )
+  );
 }
 
-export default App
+export default App;
