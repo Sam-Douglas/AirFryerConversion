@@ -28,7 +28,9 @@ export default function RecipeConverter() {
       values.tempUnit === "°C" ? values.temp - 20 : values.temp - 36;
 
     SetOutput(
-      `Cook for ${convertedTime} Minutes at ${convertedTemp}${values.tempUnit}`
+      `Cook for ${convertedTime} Minutes at ${Math.round(convertedTemp)}${
+        values.tempUnit
+      }`
     );
   }
 
